@@ -1,0 +1,7 @@
+nav:
+    - 'Introduction': ''
+    - 'Create a wayline': 'create-wayline'
+    - 'Edit Area Wayline': 'edit-area-wayline'
+    - 'Edit Waypoint Wayline': 'edit-waypoint-wayline'
+
+order: asc
