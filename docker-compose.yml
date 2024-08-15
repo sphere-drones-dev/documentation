@@ -1,0 +1,17 @@
+services:
+  sdk_docs:
+    container_name: sdk_docs
+    build: .
+    ports:
+      - 8088:8088
+    volumes:
+      - ${PWD}:/home
+    stdin_open: true
+    working_dir: /home
+    tty: true
+    command:
+      - "mkdocs"
+      - "serve"
+      - "--dev-addr=0.0.0.0:8088"
+      - "--config-file"
+      - "./mkdocs.yml"
